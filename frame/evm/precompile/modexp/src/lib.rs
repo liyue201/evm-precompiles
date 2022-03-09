@@ -15,11 +15,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#![cfg_attr(not(feature = "std"), no_std)]
-
-extern crate alloc;
-
-use alloc::vec::Vec;
 use core::{cmp::max, ops::BitAnd};
 
 use num::{BigUint, FromPrimitive, One, ToPrimitive, Zero};
@@ -228,7 +223,6 @@ impl Precompile for Modexp {
 #[cfg(test)]
 mod tests {
 	use super::*;
-	extern crate hex;
 	use pallet_evm_test_vector_support::test_precompile_test_vectors;
 
 	#[test]

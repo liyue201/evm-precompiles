@@ -19,7 +19,6 @@ pub use evm::{
 	executor::stack::{PrecompileFailure, PrecompileOutput, PrecompileSet},
 	Context, ExitError, ExitRevert, ExitSucceed,
 };
-use sp_std::vec::Vec;
 
 pub type PrecompileResult = Result<PrecompileOutput, PrecompileFailure>;
 

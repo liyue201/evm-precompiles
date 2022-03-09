@@ -18,12 +18,10 @@
 use evm::{Context, ExitSucceed};
 use fp_evm::Precompile;
 
-#[cfg(feature = "std")]
 use serde::Deserialize;
 
 #[allow(non_snake_case)]
 #[derive(Deserialize, Debug)]
-#[cfg(feature = "std")]
 struct EthConsensusTest {
 	Input: String,
 	Expected: String,
@@ -34,7 +32,6 @@ struct EthConsensusTest {
 /// Tests a precompile against the ethereum consensus tests defined in the given file at filepath.
 /// The file is expected to be in JSON format and contain an array of test vectors, where each
 /// vector can be deserialized into an "EthConsensusTest".
-#[cfg(feature = "std")]
 pub fn test_precompile_test_vectors<P: Precompile>(filepath: &str) -> Result<(), String> {
 	use std::fs;
 
