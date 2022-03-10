@@ -295,7 +295,7 @@ impl Precompile for Bn128Pairing {
 #[cfg(test)]
 mod tests {
 	use super::*;
-	use pallet_evm_test_vector_support::test_precompile_test_vectors;
+	use ovr_evm_test_vector_support::test_precompile_test_vectors;
 
 	#[test]
 	fn process_consensus_tests_for_add() -> Result<(), String> {

@@ -1,8 +1,11 @@
 [package]
-name = "fp-evm"
-version = "3.0.0-dev"
+name = "ovr-fp-evm"
+version = "3.0.0"
 license = "Apache-2.0"
 edition = "2021"
+description = "..."
+homepage = "https://github.com/Overealityio/frontier"
+repository = "https://github.com/Overealityio/frontier"
 
 [dependencies]
 evm = { version = "0.33.1", default-features = false, features = ["std", "with-serde"] }

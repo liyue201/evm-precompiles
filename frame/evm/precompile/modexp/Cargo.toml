@@ -1,12 +1,16 @@
 [package]
-name = "pallet-evm-precompile-modexp"
-version = "2.0.0-dev"
+name = "ovr-evm-precompile-modexp"
+version = "2.0.0"
 edition = "2021"
+description = "..."
+license = "Apache-2.0"
+homepage = "https://github.com/Overealityio/frontier"
+repository = "https://github.com/Overealityio/frontier"
 
 [dependencies]
 num = { version = "0.4", features = ["alloc"], default-features = false }
-fp-evm = { version = "3.0.0-dev", path = "../../../../primitives/evm" }
+fp-evm = { package = "ovr-fp-evm", version = "3.0.0" }
 
 [dev-dependencies]
 hex = "0.4.3"
-pallet-evm-test-vector-support = { version = "1.0.0-dev", path = "../../test-vector-support" }
+ovr-evm-test-vector-support = { version = "1.0.0" }

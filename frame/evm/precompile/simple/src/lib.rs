@@ -128,7 +128,7 @@ impl LinearCostPrecompile for ECRecoverPublicKey {
 #[cfg(test)]
 mod tests {
 	use super::*;
-	use pallet_evm_test_vector_support::test_precompile_test_vectors;
+	use ovr_evm_test_vector_support::test_precompile_test_vectors;
 
 	// TODO: this fails on the test "InvalidHighV-bits-1" where it is expected to return ""
 	#[test]
