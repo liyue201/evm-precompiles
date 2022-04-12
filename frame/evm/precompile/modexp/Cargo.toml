@@ -9,7 +9,7 @@ repository = "https://github.com/Overealityio/frontier"
 
 [dependencies]
 num = { version = "0.4", features = ["alloc"], default-features = false }
-fp-evm = { package = "ovr-fp-evm", version = "3.0.0" }
+fp-evm = { package = "ovr-fp-evm", path = "../../../../primitives/evm" }
 
 [dev-dependencies]
 hex = "0.4.3"

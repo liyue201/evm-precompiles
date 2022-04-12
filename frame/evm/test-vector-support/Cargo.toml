@@ -8,8 +8,8 @@ homepage = "https://github.com/Overealityio/frontier"
 repository = "https://github.com/Overealityio/frontier"
 
 [dependencies]
-evm = { version = "0.33.1", default-features = false, features = ["with-codec"] }
+evm = { version = "0.35", default-features = false, features = ["with-codec"] }
 hex = { version = "0.4.3" }
 serde = { version = "1.0.101", features = ["derive"] }
 serde_json = { version = "1.0" }
-fp-evm = { package = "ovr-fp-evm", version = "3.0.0" }
+fp-evm = { package = "ovr-fp-evm", path = "../../../primitives/evm" }

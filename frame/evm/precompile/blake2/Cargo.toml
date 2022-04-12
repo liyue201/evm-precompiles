@@ -8,7 +8,7 @@ homepage = "https://github.com/Overealityio/frontier"
 repository = "https://github.com/Overealityio/frontier"
 
 [dependencies]
-fp-evm = { package = "ovr-fp-evm", version = "3.0.0" }
+fp-evm = { package = "ovr-fp-evm", path = "../../../../primitives/evm" }
 
 [dev-dependencies]
 ovr-evm-test-vector-support = { version = "1.0.0", path = "../../test-vector-support" }

@@ -9,4 +9,4 @@ repository = "https://github.com/Overealityio/frontier"
 
 [dependencies]
 ed25519-dalek = { version = "1.0.0", default-features = false, features = ["alloc", "u64_backend"] }
-fp-evm = { package = "ovr-fp-evm", version = "3.0.0" }
+fp-evm = { package = "ovr-fp-evm", path = "../../../../primitives/evm" }

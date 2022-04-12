@@ -10,7 +10,7 @@ repository = "https://github.com/Overealityio/frontier"
 [dependencies]
 ripemd = { version = "0.1", default-features = false }
 sp-io = "6.0.0"
-fp-evm = { package = "ovr-fp-evm", version = "3.0.0" }
+fp-evm = { package = "ovr-fp-evm", path = "../../../../primitives/evm" }
 
 [dev-dependencies]
 ovr-evm-test-vector-support = { version = "1.0.0", path = "../../test-vector-support" }
