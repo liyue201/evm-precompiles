@@ -8,4 +8,4 @@ homepage = "https://github.com/Overealityio/frontier"
 repository = "https://github.com/Overealityio/frontier"
 
 [dependencies]
-evm = { version = "0.35.0", default-features = false, features = ["std", "with-serde"] }
+evm = { git = "https://github.com/liyue201/evm", rev = "3e739c82cdada8108d145841759964e39af1d279", default-features = false, features = ["with-serde"] }
